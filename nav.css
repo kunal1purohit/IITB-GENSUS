@@ -15,7 +15,7 @@
     height: 40px;
     padding: 0px 70px;
     color: rgb(180, 64, 64);
-    z-index: 101;
+    z-index: 104;
 }
 .list ul li{
     text-align: right;
@@ -152,13 +152,16 @@ body {
     flex-direction: column;
     align-items:start;
     justify-content: center;
-    background-color: #e00300;
+    background-color: #E00300;
     /* background: linear-gradient(to top left, #000000 0%, #e00300 100%); */
     z-index: 103;
     color:grey;
     padding-left: 30px;
     padding-top: 30%;
     
+ }
+ .modal a{
+    color:rgb(24, 25, 24);
  }
  .modal ul li{
     font-size: 40px;
