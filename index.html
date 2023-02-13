@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENSUS</title>
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<style>
+ 
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+*{
+    font-family: 'League Spartan', sans-serif;
+   
+}
+
+
+a{
+    text-decoration: none;
+    color:#e00300;
+}
+    .main {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(24, 25, 24);
+        padding-top: 140px;
+        padding-left: 80px;
+    }
+
+    .cool {
+        font-size: 70px;
+    }
+    #stupid{
+        font-size: 190px;
+        border-bottom: 2px solid #e00300;
+        
+    }
+
+    .join h1 {
+        display: inline-block;
+        position: absolute;
+        bottom: 250px;
+        font-size: 43px;
+        /* border-top: 2px solid white; */
+        /* background-color: aquamarine; */
+    }
+
+  
+
+    @media only screen and (max-width: 600px) {
+        .main {
+            padding-left: 0px;
+            padding-top: 120px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .join {
+            display: flex;
+            align-items: end;
+            justify-content: center;
+        }
+
+        .cool {
+            font-size: 50px;
+        }
+
+        .navigation {
+            padding: 0px 30px;
+        }
+
+    }
+
+   
+
+    .projects {
+        height: 80vh;
+        width: 100vw;
+        background-color: blanchedalmond;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .projects>div {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .name {
+        font-size: 50px;
+        border-bottom: 4px solid #e00300;
+        padding-bottom: 20px;
+    }
+
+    .explore {
+        font-size: 43px;
+
+    }
+
+    .projects p {
+        text-align: end;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .projects {
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #stupid{
+        font-size: 60px;
+    }
+
+        .projects p {
+            text-align: start;
+
+        }
+
+        .projects>div {
+            width: 100%;
+            align-items: start;
+            padding-left: 20px;
+        }
+
+        .projects>div>div {
+            width: 100%;
+        }
+
+        /* .name{
+       
+        border-bottom: 0px solid black;
+      
+    } */
+        .projects h1 {
+            text-align: left;
+            margin-top: 20px;
+
+        }
+
+        ion-icon {
+            font-size: 16px;
+        }
+
+        .explore {
+            font-size: 20px;
+        }
+
+    }
+
+    .p1 {
+        background-color: rgb(24, 25, 24);
+        border:2px solid #e00300;
+    }
+
+    .p1>div,
+    .p2>div {
+        margin-bottom: 30px;
+    }
+
+    .p2 {
+        background-color: rgb(24, 25, 24);
+        border:2px solid #e00300;
+
+    }
+   
+</style>
+
+<body>
+    <nav>
+        <div class="navigation">
+            <div class="navlogo">
+                <a href="./index.html"><img src="logo.png" alt="error loading logo"></a>
+            </div>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="list">
+                <ul style="list-style: none;">
+                    <a href="./index.html"><li class="line1">HOME&nbsp; </li></a>
+                    <a href="#"><li class="line2">PROJECT&nbsp;</li></a>
+                   <a href="./team.html"><li class="line3">TEAM&nbsp;</li></a> 
+                  
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <section>
+
+        <div class="main">
+            <div class="cool">
+                <h1>Keep It Simple</h1>
+                <h1 id ="stupid">STUPID!</h1>
+
+            </div>
+            <div id="nav-icon1">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="join">
+                <h1>&nbsp;JOIN THE TEAM <ion-icon name="arrow-forward-outline"></ion-icon>&nbsp;</h1>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="projects">
+            <div class="p1">
+                <div>
+                    <h1 class="name">ROVER</h1>
+                    <p>Fig. 1</p>
+                </div>
+                <div>
+                    <h1 class="explore">EXPLORE<ion-icon name="arrow-forward-outline"></ion-icon></h1>
+                </div>
+
+            </div>
+            <div class="p2">
+                <div>
+                    <h1 class="name">THANO POD</h1>
+                    <p>Fig. 2</p>
+                </div>
+                <div>
+                    <h1 class="explore">EXPLORE<ion-icon name="arrow-forward-outline"></ion-icon></h1>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="foooter">
+            <div class="flogo">
+                <a href="./index.html"><img src="logo.png" alt="error loading logo"></a>
+            </div>
+            <div class="fcopy">
+                <ul>
+                    <li>&copy; GENSUS 2023</li>
+                    <li>ALL RIGHTS RESERVED.</li>
+                </ul>
+            </div>
+            <div class="flist">
+                <ul>
+                    <a href="./index.html"><li>HOME</li></a>
+                   <a href="#"> <li>PROJECT</li></a>
+                    
+                   <a href="./team.html"> <li>TEAM</li></a>
+                </ul>
+            </div>
+            <div class="ficon">
+
+                <a href="https://instagram.com/team.gensus?igshid=YmMyMTA2M2Y=" target="_blank"> <ion-icon name="logo-instagram"></ion-icon></a>
+                   <a href="#"> <ion-icon name="logo-linkedin"></ion-icon></a>
+                   <a href="#"> <ion-icon name="call-outline"></ion-icon></a>
+
+            </div>
+        </div>
+    </footer>
+    <div class="modal">
+        <ul style="list-style: none;">
+            <a href="./index.html"><li>HOME</li></a>
+            <a href="#"> <li>PROJECT</li></a>
+             
+            <a href="./team.html"> <li>TEAM</li></a>
+            <li id="last">&copy; GENSUS 2023</li>
+        </ul>
+
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+
+        function myFunction(x) {
+            x.classList.toggle("change");
+            var modal = document.getElementsByClassName('modal')[0];
+            var nav = document.getElementsByClassName('navigation')[0];
+
+            //    modal.style.display='flex';
+            modal.classList.toggle("open");
+            nav.classList.toggle("fix");
+
+            // if(modal.style.display != 'none'){
+            //         para.style.display = 'none';
+            //         nav.style.position='absolute';
+            //         }
+            //         else{
+            //         para.style.display = 'flex';
+            //         nav.style.position='fixed';
+
+            //         }
+
+
+        }
+
+    </script>
+</body>
+
+</html>
