@@ -241,7 +241,7 @@
     }
 </style>
 
-<body onload="myFunction()">
+<body onload="myFunction1()">
     <div id="loadercontainer">
         <div id="loader"></div>
         <img src="logo.png" alt="error">
@@ -386,9 +386,13 @@
 
         }
 
-        var myVar;
+       
 
-        function myFunction() {
+    </script>
+    <script>
+ var myVar;
+
+        function myFunction1() {
             myVar = setTimeout(showPage, 3000);
         }
 
@@ -396,7 +400,6 @@
             document.getElementById("loadercontainer").style.display = "none";
             //   document.getElementsByClassName("myDiv").style.display = "block";
         }
-
     </script>
 </body>
 
