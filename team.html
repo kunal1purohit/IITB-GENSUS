@@ -1,195 +1,233 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>THE TEAM</title>
-    <link rel="icon" href="logo.jpg" type="image/x-icon">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE TEAM</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="footer.css">
-    </head>
-    <style>
-         @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
-*{
-    font-family: 'League Spartan', sans-serif;
-  
-   
-}
-        :root {
- --size: 25px ;
-}
-a{
-    text-decoration: none;
-    color:#e00300;
-}
-        .navigation{
-            position: fixed;
-            top:0;
-            padding-top: 30px;
-            height:70px;
-            opacity: 1;
-            z-index: 200;
-        }
-        .belownav{
-            position: fixed;
-            top:0px;
-            height:100vh;
-            width:100vw;
-            background-color: rgb(25, 24, 24);
-            z-index: 102;
-            display:flex;
-            flex-direction: column;
-            align-items: start;
-            justify-content: center;
-            transform: scale(1);
-        }
-        .belownav h1{
-            text-align: start;
-            color: #e00300;
-            padding-left: 35vw;
-            font-size: calc(3 * var(--size));
-        }
-        h1 span{
-            color: rgb(189, 16, 16);
-            font-size: calc(4 * var(--size));
-            scale: 5;
-        }
-        .info{
-            position: relative;
-            height:300vh;
-            width:100vw;
-            background-color: #e00300;
-            z-index: 101;
-        }
-        @media only screen and (max-width: 600px) {
-            .belownav h1{
-                padding-left: 15vw;
-            }
-            .belownav h1 {
-    --size: 13px;
-  }
-            
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+    * {
+        font-family: 'League Spartan', sans-serif;
+
+
     }
-    .line1::after{
+
+    :root {
+        --size: 25px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #e00300;
+    }
+
+    .navigation {
+        position: fixed;
+        top: 0;
+        padding-top: 30px;
+        height: 70px;
+        opacity: 1;
+        z-index: 200;
+    }
+
+    .belownav {
+        position: fixed;
+        top: 0px;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(25, 24, 24);
+        z-index: 102;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        transform: scale(1);
+    }
+
+    .belownav h1 {
+        text-align: start;
+        color: #e00300;
+        padding-left: 35vw;
+        font-size: calc(3 * var(--size));
+    }
+
+    h1 span {
+        color: rgb(189, 16, 16);
+        font-size: calc(4 * var(--size));
+        scale: 5;
+    }
+
+    .info {
+        position: relative;
+        height: 300vh;
+        width: 100vw;
+        background-color: #e00300;
+        z-index: 101;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .belownav h1 {
+            padding-left: 15vw;
+        }
+
+        .belownav h1 {
+            --size: 13px;
+        }
+        ion-icon {
+            font-size: 16px;
+        }
+
+    }
+
+    .line1::after {
         top: 35px;
     }
-    .line2::after{
+
+    .line2::after {
         top: 65px;
     }
-    .line3::after{
+
+    .line3::after {
         top: 95px;
     }
-    #i{
-         margin-left: 0.5vw;
+
+    #i {
+        margin-left: 0.5vw;
     }
-  
-    </style>
-    <body>
-        <nav>
-            <div class="navigation">
-                <div class="navlogo">
-                    <a href="./index.html"><img src="logo.png" alt="error loading logo"></a>
-                </div>
-                <div class="container" onclick="myFunction(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-                <div class="list">
-                    <ul style="list-style: none;">
-                        <a href="./index.html"><li class="line1">HOME&nbsp; </li></a>
-                        <a href="#"><li class="line2">PROJECT&nbsp;</li></a>
-                       <a href="./team.html"><li class="line3">TEAM&nbsp;</li></a> 
-                      
-                    </ul>
-                </div>
-    
-            </div>
-        </nav>
+</style>
 
-        <div class="belownav">
-<h1><span>D</span>edication
-</h1>
-<h1 id="i"><span  >I</span>ntegration</h1>
-<h1><span>C</span>ommunication</h1>
-<h1><span>K</span>nowledge</h1>
-  
-        </div>
-        <div class="info">
+<body>
+    <nav>
+        <div class="navigation">
+            <div class="navlogo">
+                <a href="./index.html"><img src="logo.png" alt="error loading logo"></a>
+            </div>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="list">
+                <ul style="list-style: none;">
+                    <a href="./index.html">
+                        <li class="line1">HOME&nbsp; </li>
+                    </a>
+                    <a href="./projects.html">
+                        <li class="line2">PROJECT&nbsp;</li>
+                    </a>
+                    <a href="./team.html">
+                        <li class="line3">TEAM&nbsp;</li>
+                    </a>
+
+                </ul>
+            </div>
 
         </div>
-        <footer>
-            <div class="foooter">
-                <div class="flogo">
-                    <a href="./index.html"><img src="logo.png" alt="error loading logo"></a>
-                </div>
-                <div class="fcopy">
-                    <ul>
-                        <li>&copy; GENSUS 2023</li>
-                        <li>ALL RIGHTS RESERVED.</li>
-                    </ul>
-                </div>
-                <div class="flist">
-                    <ul>
-                        <a href="./index.html"><li>HOME</li></a>
-                       <a href="#"> <li>PROJECT</li></a>
-                        
-                       <a href="./team.html"> <li>TEAM</li></a>
-                    </ul>
-                </div>
-                <div class="ficon">
-    
-                   <a href="https://instagram.com/team.gensus?igshid=YmMyMTA2M2Y=" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-                   <a href="#"> <ion-icon name="logo-linkedin"></ion-icon></a>
-                   <a href="#"> <ion-icon name="call-outline"></ion-icon></a>
-    
-                </div>
+    </nav>
+
+    <div class="belownav">
+        <h1><span>D</span>edication
+        </h1>
+        <h1 id="i"><span>I</span>ntegration</h1>
+        <h1><span>C</span>ommunication</h1>
+        <h1><span>K</span>nowledge</h1>
+
+    </div>
+    <div class="info">
+
+    </div>
+    <footer>
+        <div class="foooter">
+            <div class="flogo">
+                <a href="./index.html"><img src="logo.png" alt="error loading logo"></a>
             </div>
-        </footer>
-        <div class="modal">
-            <ul style="list-style: none;">
-                <a href="./index.html"><li>HOME</li></a>
-                <a href="#"> <li>PROJECT</li></a>
-                 
-                <a href="./team.html"> <li>TEAM</li></a>
-                <li id="last">&copy; GENSUS 2023</li>
-            </ul>
-    
+            <div class="fcopy">
+                <ul>
+                    <li>&copy; GENSUS 2023</li>
+                    <li>ALL RIGHTS RESERVED.</li>
+                </ul>
+            </div>
+            <div class="flist">
+                <ul>
+                    <a href="./index.html">
+                        <li>HOME</li>
+                    </a>
+                    <a href="./projects.html">
+                        <li>PROJECT</li>
+                    </a>
+
+                    <a href="./team.html">
+                        <li>TEAM</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="ficon">
+
+                <a href="https://instagram.com/team.gensus?igshid=YmMyMTA2M2Y=" target="_blank"><ion-icon
+                        name="logo-instagram"></ion-icon></a>
+                <a href="#"> <ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="#"> <ion-icon name="call-outline"></ion-icon></a>
+
+            </div>
         </div>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    </footer>
+    <div class="modal">
+        <ul style="list-style: none;">
+            <a href="./index.html">
+                <li>HOME</li>
+            </a>
+            <a href="./projects.html">
+                <li>PROJECT</li>
+            </a>
+
+            <a href="./team.html">
+                <li>TEAM</li>
+            </a>
+            <li id="last">&copy; GENSUS 2023</li>
+        </ul>
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-        <script>
-            var fade = document.getElementsByClassName('belownav')[0];
-            var nav = document.getElementsByClassName('navigation')[0];
+    <script>
+        var fade = document.getElementsByClassName('belownav')[0];
+        var nav = document.getElementsByClassName('navigation')[0];
 
 
-           window.addEventListener(`scroll`, function (e) {
-  const heroOpas = this.scrollY / 500;
-  if (heroOpas === 0) {
-    fade.style.opacity = 1;
-    nav.style.opacity = 1;
-  }
-  if (heroOpas > 0) {
-    fade.style.opacity = `${1 - heroOpas}`;
-    nav.style.opacity = `${(1 - 10 * heroOpas)}`;
-    fade.style.scale = `${(1 + 10 * heroOpas)}`;
+        window.addEventListener(`scroll`, function (e) {
+            const heroOpas = this.scrollY / 500;
+            if (heroOpas === 0) {
+                fade.style.opacity = 1;
+                nav.style.opacity = 1;
+            }
+            if (heroOpas > 0) {
+                fade.style.opacity = `${1 - heroOpas}`;
+                nav.style.opacity = `${(1 - 10 * heroOpas)}`;
+                fade.style.scale = `${(1 + 10 * heroOpas)}`;
 
-  }
-});
+            }
+        });
 
 
-function myFunction(x) {
+        function myFunction(x) {
             x.classList.toggle("change");
             var modal = document.getElementsByClassName('modal')[0];
 
-           
+
             modal.classList.toggle("open");
             nav.classList.toggle("fix");
 
 
         }
-        </script>
-    </body>
-    </html>
+    </script>
+</body>
+
+</html>
