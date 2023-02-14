@@ -194,7 +194,7 @@ a{
     }
     .project {
        
-        height: 330vh;
+        height: 340vh;
     }
     .belownav h1{
         font-size: 80px;
@@ -350,6 +350,7 @@ a{
 
         window.addEventListener(`scroll`, function (e) {
             const heroOpas = this.scrollY / 500;
+                      
             if (heroOpas === 0) {
                 fade.style.opacity = 1;
                 nav.style.opacity = 1;
@@ -359,6 +360,13 @@ a{
                 nav.style.opacity = `${(1 - 10 * heroOpas)}`;
                 fade.style.scale = `${(1 + 10 * heroOpas)}`;
 
+            }
+            const none = this.scrollY; 
+            if(none > 600){
+                fade.style.display = "none";
+            }
+            if(none < 600){
+                fade.style.display = "flex";
             }
         });
 

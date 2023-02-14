@@ -214,6 +214,13 @@
                 fade.style.scale = `${(1 + 10 * heroOpas)}`;
 
             }
+            const none = this.scrollY; 
+            if(none > 600){
+                fade.style.display = "none";
+            }
+            if(none < 600){
+                fade.style.display = "flex";
+            }
         });
 
 
