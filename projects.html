@@ -63,13 +63,13 @@ a{
         position: relative;
         height: 300vh;
         width: 100vw;
-        background-color: #e00300;
-        z-index: 103;
+        background-color: rgb(24, 25, 24);
+        z-index: 101;
     }
     .empty{
         width:100%;
-        height:100vh;
-        background-color: aqua;
+        height:127vh;
+        background-color: rgb(24, 25, 24);
     }
     .projects {
         height: 80vh;
@@ -119,6 +119,39 @@ a{
         border:2px solid #e00300;
 
     }
+   
+    .completed{
+        background-color: rgb(24, 25, 24);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;        
+    }
+    .completed div{
+        height:300px;
+        background-color: rgb(24, 25, 24);
+        border: 2px solid #e00300;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        transition:all 0.5s;
+    }
+    .completed div:hover{
+        background-color: rgb(21, 22, 21);
+    }
+  
+    .completed h1{
+        color: #e00300;
+        font-size: 30px;
+        margin-top: 10px;
+        border-bottom: 2px solid #e00300;
+    }
+    .completed ion-icon{
+        transition:all 1s;
+    }
+    .completed ion-icon:hover{
+        margin-bottom: 10px;
+        scale:2;
+    }
     @media only screen and (max-width: 600px) {
         .projects {
             height: 70vh;
@@ -151,6 +184,21 @@ a{
         .explore {
             font-size: 20px;
         }
+        .completed{
+        background-color: rgb(24, 25, 24);
+        display: grid;
+        grid-template-columns: 1fr ;        
+    }
+    .completed div{
+        height:200px;
+    }
+    .project {
+       
+        height: 330vh;
+    }
+    .belownav h1{
+        font-size: 80px;
+    }
 
     }
 </style>
@@ -210,6 +258,34 @@ a{
                 
             </div>
     
+        </section>
+        <section>
+            <div class="completed">
+                <div>
+                    <h1>PROJECT 1</h1>
+                    <h2><ion-icon name="add-circle-outline"></ion-icon></h2>
+                </div>
+                <div>
+                    <h1>PROJECT 2</h1>
+                    <h2><ion-icon name="add-circle-outline"></ion-icon></h2>
+                </div>
+                <div>
+                    <h1>PROJECT 3</h1>
+                    <h2><ion-icon name="add-circle-outline"></ion-icon></h2>
+                </div>
+                <div>
+                    <h1>PROJECT 4</h1>
+                    <h2><ion-icon name="add-circle-outline"></ion-icon></h2>
+                </div>
+                <div>
+                    <h1>PROJECT 5</h1>
+                    <h2><ion-icon name="add-circle-outline"></ion-icon></h2>
+                </div>
+                <div>
+                    <h1>PROJECT 6</h1>
+                    <h2><ion-icon name="add-circle-outline"></ion-icon></h2>
+                </div>
+            </div>
         </section>
     </div>
     <footer>
